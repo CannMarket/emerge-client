@@ -4,7 +4,7 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers'])
+var app = angular.module('starter', ['ionic', 'starter.controllers'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -30,24 +30,34 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     controller: 'AppCtrl'
   })
 
-  .state('app.search', {
-    url: "/search",
+  .state('app.account', {
+    url: "/account",
     views: {
-      'tab-search': {
-        templateUrl: "templates/search.html"
+      'tab-account': {
+        templateUrl: "app/account/account.html",
+        controller: 'AccountCtrl'
       }
     }
   })
 
-  .state('app.browse', {
-    url: "/browse",
+  .state('app.payments', {
+    url: "/payments",
     views: {
-      'tab-browse': {
-        templateUrl: "templates/browse.html"
+      'tab-payments': {
+        templateUrl: "app/payments/payments.html"
       }
     }
   })
 
+  .state('app.contacts', {
+    url: "/contacts",
+    views: {
+      'tab-contacts': {
+        templateUrl: "app/contacts/contacts.html",
+        controller: 'ContactsCtrl'
+      }
+    }
+  })
   .state('app.playlists', {
     url: "/playlists",
     views: {
@@ -57,16 +67,24 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     }
   })
-
-    .state('app.single', {
-      url: "/playlists/:playlistId",
-      views: {
-        'tab-playlists': {
-          templateUrl: "templates/playlist.html",
-          controller: 'PlaylistCtrl'
-        }
-      }
-    });
+  .state('landing', {
+      url: "/landing",
+      abstract: true,
+      templateUrl: "app/landing/landing.html",
+      controller: 'AppCtrl'
+   })
+  .state('login', {
+      url: "/login",
+      abstract: true,
+      templateUrl: "app/login/login.html",
+      controller: 'AppCtrl'
+   })
+  .state('register', {
+      url: "/register",
+      abstract: true,
+      templateUrl: "app/register/register.html",
+      controller: 'AppCtrl'
+   });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/playlists');
+  $urlRouterProvider.otherwise('/app/account');
 });

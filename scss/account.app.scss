@@ -1,0 +1,20 @@
+#AccountPage {
+	background-color:$light-gray;
+	.profile-images {	
+		img {
+			height: 100px;
+			width:auto;
+		}
+		margin-top:.5em
+	}
+	.add-profile-image {
+		font-color:#CECECE;
+		font-size:80px;
+		width:auto;
+		height:auto;
+		padding:.5em;
+		background-color:white;
+		border:1px solid #E6E6E6;
+		cursor:pointer
+	}
+}

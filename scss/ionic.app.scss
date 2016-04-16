@@ -18,6 +18,16 @@ $dark:                            #444 !default;
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
 
+$blue: 							  #4282CC !default;
+$positive : 					   $blue;
+$light-gray : 					  #F2F2F2 !default;
+
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
-
+@import "scss/base.app";
+@import "scss/landing.app";
+@import "scss/login.app";
+@import "scss/register.app";
+@import "scss/contacts.app";
+@import "scss/payments.app";
+@import "scss/account.app"; 

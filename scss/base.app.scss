@@ -1,0 +1,86 @@
+#top-logo {
+    width: 95px;
+    height: 21px;
+    margin-top: .5em;
+} 
+
+.Form {
+	label {
+		padding-left:0;
+		border:none;
+		font-weight:400;
+	} 
+	label input, label textarea, label select, .full-select select{
+	    padding: .7em;
+	    font-size: 1em;
+	    line-height: 1em;
+	    height: auto;
+	    margin-top:.5em;
+	    color:#5E5E5E;
+	}
+	.half-input {
+		width:100%;
+		input{
+			width:50%;
+			float:left;
+		}
+		input:first-child{
+			border-right:1px solid $light-gray;
+		}
+	}
+	.full-select {
+	    background-color: transparent;
+	    border: none;
+	    padding-left: 0;
+	    padding-right: 0;
+	   
+	    select {
+		    margin-top:0;
+	    	cursor: pointer;
+		    white-space: nowrap;
+		    text-overflow: "";
+		    text-indent: 0.01px;
+		    -moz-appearance: none;
+		    font-size:.95em;
+    		padding-right: .2em;
+    		width:100%
+	    }
+	}
+	span.input-label {
+		color:black;
+		padding-left:.5em;
+		font-size:.95em;
+		font-weight:400;
+	}
+	.radiolist {
+		span.input-label {
+	    	margin-bottom:.5em;
+		}
+		.radio-content {
+	    	color:#5E5E5E;
+	    	background-color:#fff;
+	    	font-size: .9em;
+	    	color:#5E5E5E;
+		}
+		 input:checked + .radio-content .item-content {
+		    background: #FFF;
+		}
+		.item-radio .radio-icon {
+			color: $positive;
+		}
+
+	}
+	.checklist {
+		span.input-label {
+	    	margin-bottom:.5em;
+		}
+		.item-content {
+			margin-left:4em;
+	    	font-size: .9em;
+	    	color:#5E5E5E;
+		}
+	}
+}  
+.full-btn {
+	width:95%;
+}

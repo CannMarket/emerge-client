@@ -1,0 +1,11 @@
+<ion-view view-title="Contacts" id="ContactsPage">
+  <ion-content>	
+  	<div class="header-bar">
+  	<a href="">Add Contact</a>
+  	</div>
+    <ion-list>
+      <ion-item ng-repeat="contact in contacts" href="#/app/payments/{{contact.id}}">
+        {{contact.name}}
+      </ion-item>
+    </ion-list>
+</ion-content>
