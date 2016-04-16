@@ -23,6 +23,12 @@ var app = angular.module('starter', ['ionic', 'starter.controllers'])
 .config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
 
+  .state('landing', {
+      url: "/landing",
+      templateUrl: "app/landing/landing.html",
+      controller: 'LandingCtrl'
+   })
+  
   .state('app', {
     url: "/app",
     abstract: true,
@@ -41,10 +47,14 @@ var app = angular.module('starter', ['ionic', 'starter.controllers'])
   })
 
   .state('app.payments', {
-    url: "/payments",
+    url: "/payments/{contact_id:int}",
+    params: { 
+        contact_id: {value: null, squash: true}
+    },
     views: {
       'tab-payments': {
-        templateUrl: "app/payments/payments.html"
+        templateUrl: "app/payments/payments.html",
+        controller: 'PaymentsCtrl'
       }
     }
   })
@@ -67,24 +77,6 @@ var app = angular.module('starter', ['ionic', 'starter.controllers'])
       }
     }
   })
-  .state('landing', {
-      url: "/landing",
-      abstract: true,
-      templateUrl: "app/landing/landing.html",
-      controller: 'AppCtrl'
-   })
-  .state('login', {
-      url: "/login",
-      abstract: true,
-      templateUrl: "app/login/login.html",
-      controller: 'AppCtrl'
-   })
-  .state('register', {
-      url: "/register",
-      abstract: true,
-      templateUrl: "app/register/register.html",
-      controller: 'AppCtrl'
-   });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/account');
+  $urlRouterProvider.otherwise('/landing');
 });

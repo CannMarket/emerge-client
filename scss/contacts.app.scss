@@ -5,5 +5,12 @@
 		background-color:$positive;
 		color:$light;
 		text-align:right;
+		padding:.3em;
+		a {
+			color:$light;
+		}
 	}
+}
+#AddContactPage {
+	background-color:$light-gray;
 }

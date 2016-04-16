@@ -9149,12 +9149,52 @@ a.button {
 .full-btn {
   width: 95%; }
 
+#landingPage {
+  margin: 0 auto;
+  text-align: center; }
+  #landingPage p.tagline {
+    font-size: 1.3em;
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    max-width: 280px; }
+  #landingPage p.agreement {
+    font-size: .75em;
+    margin-top: 1em;
+    margin-bottom: 1.7em; }
+  #landingPage button {
+    width: 6em;
+    font-size: 1.4em;
+    font-weight: 300; }
+  #landingPage button:first-child {
+    margin-right: 1em; }
+  #landingPage button span {
+    font-weight: 500; }
+  #landingPage .logo {
+    margin-top: 1.5em; }
+
+.login-title {
+  font-size: 1em;
+  font-weight: 300; }
+
+.login-title span {
+  font-size: 1.1em;
+  font-weight: 400; }
+
 #ContactsPage .header-bar {
   width: 100%;
   font-size: .9em;
   background-color: #4282CC;
   color: #fff;
-  text-align: right; }
+  text-align: right;
+  padding: .3em; }
+  #ContactsPage .header-bar a {
+    color: #fff; }
+
+#AddContactPage {
+  background-color: #F2F2F2; }
 
 #AccountPage {
   background-color: #F2F2F2; }

@@ -1,0 +1,40 @@
+#landingPage {
+	margin:0 auto;
+	text-align:center;
+	p.tagline {
+		font-size:1.3em;
+		width:85%;
+		margin:0 auto;
+		text-align:center;
+		margin-top:1em;
+		margin-bottom:1.5em;
+		max-width:280px;
+	}
+	p.agreement {
+		font-size:.75em;
+		margin-top:1em;
+		margin-bottom:1.7em;
+	}
+	button {
+		width:6em;
+		font-size:1.4em;
+		font-weight:300;
+	}
+	button:first-child {
+		margin-right:1em;
+	}
+	button span {
+		font-weight:500;
+	}
+	.logo {
+		margin-top:1.5em;
+	}
+}    
+.login-title {
+	font-size:1em;
+	font-weight:300;
+}    
+.login-title span {
+	font-size:1.1em;
+	font-weight:400;
+}
