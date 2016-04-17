@@ -1,4 +1,4 @@
-controllers.controller('AccountCtrl', function($scope, $http) {
+controllers.controller('AccountCtrl', function($scope, $http, $timeout) {
   $scope.user = {
   	name 		: 'Mike Henken',
   	email 		: 'mikehenken@gmail.com',
@@ -17,6 +17,6 @@ controllers.controller('AccountCtrl', function($scope, $http) {
     // code if using a login system
     $timeout(function() {
       $scope.success = false;
-    }, 1000);
+    }, 1700);
   };
 })
