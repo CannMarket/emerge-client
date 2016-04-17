@@ -1,4 +1,4 @@
-controllers.controller('PaymentsCtrl', function($scope, $stateParams) {
+controllers.controller('PaymentsCtrl', function($scope, $stateParams, paymentsService) {
   console.log($stateParams);
   $scope.payment_success = false;
   $scope.contacts = [
