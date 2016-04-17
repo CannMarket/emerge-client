@@ -1,15 +1,6 @@
-Ionic Tabs + SideMenu
-===================
+Below is a link to the api and the mobile app repos.
+https://github.com/CannMarket/emerge-api
+https://github.com/CannMarket/emerge-client
 
-This is a starter app for those wishing to have both tabs and a side menu using the Ionic Framework.
-
-[Demo](http://codepen.io/loringdodge/pen/vOrRpV)
-
-![Screenshot](screenshots/iphone.png)
-
-
-
-
-
-
-
+App Name: Moshe
+Purpose: Service allowing quick and easy and intuitive payments across the world to family, business and friends.
