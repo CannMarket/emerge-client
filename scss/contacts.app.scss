@@ -13,4 +13,11 @@
 }
 #AddContactPage {
 	background-color:$light-gray;
+	.qr-scanner {
+	}
+	.qr-scan-button {
+		color:$positive;
+		padding-left:.2em;
+		cursor:pointer;
+	}
 }

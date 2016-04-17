@@ -9095,9 +9095,12 @@ a.button {
 
 .Form .half-input {
   width: 100%; }
-  .Form .half-input input {
+  .Form .half-input input, .Form .half-input select {
     width: 50%;
     float: left; }
+  .Form .half-input select {
+    border: none;
+    padding: .63em; }
   .Form .half-input input:first-child {
     border-right: 1px solid #F2F2F2; }
 
@@ -9195,6 +9198,10 @@ a.button {
 
 #AddContactPage {
   background-color: #F2F2F2; }
+  #AddContactPage .qr-scan-button {
+    color: #4282CC;
+    padding-left: .2em;
+    cursor: pointer; }
 
 #AccountPage {
   background-color: #F2F2F2; }

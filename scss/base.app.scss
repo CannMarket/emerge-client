@@ -20,9 +20,13 @@
 	}
 	.half-input {
 		width:100%;
-		input{
+		input,select{
 			width:50%;
 			float:left;
+		}
+		select  {
+				border:none;
+				padding:.63em;
 		}
 		input:first-child{
 			border-right:1px solid $light-gray;
