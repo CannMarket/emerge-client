@@ -1,28 +1,23 @@
 <ion-view view-title="Account" id="AccountPage">
   <ion-content>
 	   <div class="row row-center">
-	   <!--
-	    <div class="col col-33 profile-images">
-	        <img src="img/profile-img.jpg" />
-	    </div>
-	    <div class="col col-33 add-profile-image text-center">
-	        +
-	    </div>
-	    -->
+      <div class="success message" ng-show="success">
+        Account Saved
+      </div>
 	</div>
     <div class="list Form">
       <label class="item item-input item-stacked-label" id="passions">
         <span class="input-label">Full Name</span>
-        <input type="text" placeholder="(Enter Name)" />
+        <input type="text" placeholder="Mike Henken" ng-model"name" />
       </label>
-      <label class="item item-input item-stacked-label" id="passions">
+      <label class="item item-input item-stacked-label" ng-model"user.CardName" id="passions">
         <span class="input-label">Visa Card Number</span>
-        <input type="text" placeholder="(Enter Visa Card Numebr)" />
+        <input type="text" placeholder="8331117122911033" ng-bind="card.CardNumber" />
       </label>
       <label class="item item-input item-stacked-label" id="passions">
         <span class="input-label">Expiration Date</span>
         <div class="half-input">
-          <select name="exp-year">
+          <select name="exp-year" ng-model"user.exp_year">
               <option value="2016">2016</option>
               <option value="2017">2017</option>
               <option value="2018">2018</option>
@@ -31,7 +26,7 @@
               <option value="2021">2021</option>
               <option value="2022">2022</option>
           </select>
-	        <select name="exp-month">
+	        <select name="exp-month" ng-model"user.exp_month">
               <option value="01">January</option>
               <option value="02">February</option>
               <option value="03">March</option>
@@ -41,36 +36,41 @@
               <option value="07">July</option>
               <option value="08">August</option>
               <option value="08">September</option>
-              <option value="10">October</option>
+              <option value="10" selected="selected">October</option>
               <option value="11">November</option>
               <option value="12">December</option>
           </select>
         </div>
       </label>
       <label class="item item-input item-stacked-label" id="passions">
-        <span class="input-label">Email</span>
-        <input type="text" placeholder="(Enter Email)" />
+        <span class="input-label" ng-model"user.email">Email</span>
+        <input type="text" placeholder="mikehenken@gmail.com" />
       </label>
       <label class="item item-input item-stacked-label" id="passions">
-        <span class="input-label">Street Address</span>
-        <input type="text" placeholder="(Enter Street Address)" />
+        <span class="input-label" ng-model"user.address">Street Address</span>
+        <input type="text" placeholder="15693 Spring Line Ln" />
       </label>
       <label class="item item-input item-stacked-label" id="passions">
-        <span class="input-label">City</span>
-        <input type="text" placeholder="(Enter City)" />
+        <span class="input-label" ng-model"user.city">City</span>
+        <input type="text" placeholder="Fort Myers" />
       </label>
       <label class="item item-input item-stacked-label" id="passions">
-        <span class="input-label">State</span>
-        <input type="text" placeholder="(Enter State)" />
+        <span class="input-label" ng-model"user.state">State</span>
+        <input type="text" placeholder="FL" />
       </label>
       <label class="item item-input item-stacked-label" id="passions">
-        <span class="input-label">Zip</span>
-        <input type="text" placeholder="(Enter Zip)" />
+        <span class="input-label" ng-model"user.zip">Zip</span>
+        <input type="text" placeholder="33967" />
       </label>
       <label class="item item-input item-stacked-label" id="passions">
-        <span class="input-label">Country</span>
-        <input type="text" placeholder="(Enter Country)" />
+        <span class="input-label" ng-model"user.country">Country</span>
+        <input type="text" placeholder="United States" />
       </label>
   	</div>
+    <center>
+    <button class="button button-positive full-btn" ng-click="submit()">
+      Save
+    </button>
+    </center>
   </ion-content>
 </ion-view>

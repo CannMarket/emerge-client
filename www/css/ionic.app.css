@@ -9075,6 +9075,13 @@ a.button {
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
 
+.message {
+  width: 100%;
+  padding: .5em;
+  background-color: #4282CC;
+  color: #fff;
+  text-align: center; }
+
 #top-logo {
   width: 95px;
   height: 21px;
@@ -9195,6 +9202,9 @@ a.button {
   padding: .3em; }
   #ContactsPage .header-bar a {
     color: #fff; }
+
+#ContactsPage #add-contact-button {
+  cursor: pointer; }
 
 #AddContactPage {
   background-color: #F2F2F2; }
